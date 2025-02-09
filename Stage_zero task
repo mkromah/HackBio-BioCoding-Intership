@@ -1,5 +1,8 @@
-# HackBio-Internship-Team-work
-group_data <- data.frame(
+#Team Name: BioCoders
+#Our Linkdine Post Link:
+#Our Github Resipotory Link: https://github.com/mkromah/HackBio-BioCoding-Intership
+
+BioCoders_data <- data.frame(
   Names = c("Nina Julian","Fowowe Toyin", "Musa Al Hassan Kromah", "Sheriffdeen Hammed"),
   Slack_username = c ("Julian", "Toyin", "Musa", "Sheriffdeen"),
   Email = c("anyangonina39@gmail.com", "toyintoyo05@gmail.com", "kromahmusa86@gmail.com", "hammedsheriffdeen77@gmail.com"),
@@ -8,4 +11,4 @@ group_data <- data.frame(
   Discipline = c("Biotechnology", "Biochemistry", "Biotechnology", "Biotechnology"),
   Programming_language = c("R", "python", "python", "R")
 )
-print(group_data)
+print(BioCoders_data)

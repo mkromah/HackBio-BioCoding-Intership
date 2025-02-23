@@ -1,123 +1,139 @@
+# **HackBio Internship – BioCoding Series**
 
-# 🚀 **HackBio Internship – BioCoding Series**  
-Welcome to the **HackBio Internship** repository! 🌍✨  
-
-This repository documents our **HackBio BioCoding Internship** journey, where we apply programming skills in **bioinformatics and computational biology** to solve real-world problems. Each task in this series builds upon fundamental **coding concepts**, fostering teamwork and problem-solving skills using **Python and R**.  
-
----
-
-## 📌 **Table of Contents**  
-- [📖 Introduction](#-introduction)  
-- [📝 Tasks Overview](#-tasks-overview)  
-  - [✅ Task 0: Data Organization](#✅-task-0-data-organization)  
-  - [✅ Task 1: Data Structures in Bioinformatics](#✅-task-1-data-structures-in-bioinformatics)  
-  - [📅 Upcoming Tasks](#📅-upcoming-tasks)  
-- [👨‍💻 Team Members](#-team-members)  
-- [📚 Resources](#-resources)  
-- [💻 How to Use This Repository](#-how-to-use-this-repository)  
-- [💬 Connect With Us!](#-connect-with-us)  
+## **📌 Table of Contents**
+1. [Introduction](#introduction)
+2. [Team Information](#team-information)
+3. [Task 0: Team Formation & Data Representation](#task-0-team-formation--data-representation)
+4. [Task 1: Microbial Growth Curve Analysis](#task-1-microbial-growth-curve-analysis)
+5. [Task 2: Advanced Bioinformatics Analyses](#task-2-advanced-bioinformatics-analyses)
+   - [2.1 Microbiology: Growth Curve Analysis](#21-microbiology-growth-curve-analysis)
+   - [2.3 Botany & Plant Science: Metabolic Response Analysis](#23-botany--plant-science-metabolic-response-analysis)
+   - [2.4 Biochemistry & Oncology: Protein Mutation Impact](#24-biochemistry--oncology-protein-mutation-impact)
+   - [2.6 Transcriptomics: RNA-seq Data Analysis](#26-transcriptomics-rna-seq-data-analysis)
+   - [2.7 Public Health: NHANES Data Analysis](#27-public-health-nhanes-data-analysis)
+6. [Upcoming Tasks](#upcoming-tasks)
+7. [How to Contribute](#how-to-contribute)
+8. [Contact & Socials](#contact--socials)
 
 ---
 
-## 📖 **Introduction**  
-
-The **HackBio Internship** is a structured program designed to **equip participants** with hands-on experience in **coding for bioinformatics**. Through multiple stages, we explore **programming fundamentals**, tackle **biological data challenges**, and develop **computational thinking skills**.  
-
-This repository serves as a **documentation hub** for our progress, including scripts, solutions, and explanations for each task.  
+## **Introduction**
+This repository documents the **HackBio BioCoding Internship**, where we engage in bioinformatics problem-solving using **Python and R**. Our goal is to enhance our coding proficiency while applying computational techniques to biological datasets.
 
 ---
 
-## 📝 **Tasks Overview**  
-
-### ✅ **Task 0: Data Organization**  
-📌 **Objective:** Organize team information using **basic coding structures** without loops, conditionals, or functions.  
-
-**Topics Covered:**  
-- 🔹 Basic **R & Python syntax**  
-- 🔹 **Data types & structures**  
-- 🔹 **Organizing and displaying structured information**  
-
-📌 **Solution:** We used an **R data frame** to structure and print team details, ensuring clarity and readability.  
-
-📂 **[View Task 0 Solution](https://github.com/mkromah/HackBio-BioCoding-Intership/blob/main/HackBio_Internship_Assigment.ipynb)**  
+## **Team Information**
+| Name                     | Slack Username | Email                      | Hobby               | Country  | Discipline       | Preferred Language |
+|--------------------------|---------------|----------------------------|----------------------|----------|-----------------|--------------------|
+| Musa Al Hassan Kromah    | Musa          | kromahmusa86@gmail.com     | Hiking              | Liberia  | Biotechnology   | Python, R         |
+| Nina Julian              | Julian        | anyangonina39@gmail.com    | Listening to Music  | Kenya    | Biotechnology   | R                 |
+| Fowowe Toyin             | Toyin         | toyintoyo05@gmail.com      | Reading             | Nigeria  | Biochemistry    | Python            |
 
 ---
 
-### ✅ **Task 1: Data Structures in Bioinformatics**  
-📌 **Objective:** Implement fundamental **data structures** in Python/R to solve real-world problems in **computational biology**.  
+## **Task 0: Team Formation & Data Representation**
+### **Objective**
+- Organize team information in a structured data format using **Python or R**.
+- Ensure no loops, conditionals, or functions are used.
 
-**Topics Covered:**  
-- 🔹 **Lists, Dictionaries, Tuples, and DataFrames**  
-- 🔹 **Translating DNA sequences to proteins** 🧬  
-- 🔹 **Simulating bacterial growth models** 📈  
-- 🔹 **Hamming distance calculation for sequence comparison**  
+### **Approach & Implementation**
+#### **R Implementation:**
+```r
+# Load necessary library
+data <- data.frame(
+  Name = c("Musa Al Hassan Kromah", "Nina Julian", "Fowowe Toyin"),
+  Slack_Username = c("Musa", "Julian", "Toyin"),
+  Email = c("kromahmusa86@gmail.com", "anyangonina39@gmail.com", "toyintoyo05@gmail.com"),
+  Hobby = c("Hiking", "Listening to Music", "Reading"),
+  Country = c("Liberia", "Kenya", "Nigeria"),
+  Discipline = c("Biotechnology", "Biotechnology", "Biochemistry"),
+  Preferred_Language = c("Python, R", "R", "Python")
+)
+print(data)
+```
 
-📌 **Solution:** We utilized **Python and R** to perform **key bioinformatics computations** while demonstrating structured programming practices.  
-
-📂 **[View Task 1 Solution](https://github.com/mkromah/HackBio-BioCoding-Intership/blob/main/HackBio_Internship_Assigment.ipynb)**  
-
----
-
-### 📅 **Upcoming Tasks**  
-Stay tuned for more tasks as we progress in the internship! 🚀  
-
-🔜 **Task 2: Bioinformatics Algorithms**  
-🔜 **Task 3: Data Visualization in Biology**  
-🔜 **Task 4: Genomic Data Analysis**  
-
-Each new task will be **added to this repository** with explanations and scripts!  
-
----
-
-## 👨‍💻 **Team Members**  
-
-| Name                 | Country  | Discipline        | Preferred Language(s) |  
-|----------------------|---------|------------------|----------------------|  
-| **Musa Al Hassan Kromah** | 🇱🇷 Liberia | Biotechnology    | Python, R            |  
-| Nina Julian         | 🇰🇪 Kenya | Biotechnology    | R                    |  
-| Fowowe Toyin       | 🇳🇬 Nigeria | Biochemistry     | Python               |  
-
-📌 **LinkedIn Post:** [Check out our LinkedIn submission](https://www.linkedin.com/posts/mkromah_hackbio-bioinformatics-biocoding-activity-7294767807068569600-D8fu?utm_source=share&utm_medium=member_desktop)  
+✅ **Outcome:** A structured data representation successfully printed.
 
 ---
 
-## 📚 **Resources**  
-Here are some resources we used during our learning process:  
+## **Task 1: Microbial Growth Curve Analysis**
+### **Objective**
+- Analyze microbial growth curves for **knockout (-) and knock-in (+) strains**.
+- Compute **time to carrying capacity**.
+- Visualize data using **scatter and box plots**.
+- Perform **statistical analysis**.
 
-📌 **Python Basics:** [Python Official Docs](https://docs.python.org/3/tutorial/)  
-📌 **R Basics:** [R for Data Science](https://r4ds.had.co.nz/)  
-📌 **Bioinformatics Algorithms:** [Rosalind Bioinformatics Challenges](http://rosalind.info/)  
+### **Approach & Implementation**
+#### **Python Implementation:**
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load dataset
+data = pd.read_csv("microbial_growth.csv")
+
+# Plot growth curves
+sns.lineplot(data=data, x="Time", y="OD600", hue="Strain")
+plt.title("Microbial Growth Curve")
+plt.xlabel("Time (hours)")
+plt.ylabel("OD600")
+plt.show()
+```
+✅ **Outcome:** Successfully visualized growth differences between strains.
 
 ---
 
-## 💻 **How to Use This Repository**  
+## **Task 2: Advanced Bioinformatics Analyses**
 
-1. **Clone the repository:**  
+### **2.1 Microbiology: Growth Curve Analysis**
+📌 **Objective:** Compare microbial growth rates between knock-out (-) and knock-in (+) strains.
+📌 **Implementation:** Used **Python (pandas, matplotlib, seaborn)** for data visualization.
+
+### **2.3 Botany & Plant Science: Metabolic Response Analysis**
+📌 **Objective:** Identify key metabolites in pesticide-resistant crops at different time points.
+📌 **Implementation:** Used **scatter plots, regression models**, and **residual calculations**.
+
+### **2.4 Biochemistry & Oncology: Protein Mutation Impact**
+📌 **Objective:** Analyze mutations affecting both protein structure and function.
+📌 **Implementation:** Integrated **SIFT & FoldX datasets**, visualized mutation frequencies using **bar plots and pie charts**.
+
+### **2.6 Transcriptomics: RNA-seq Data Analysis**
+📌 **Objective:** Identify **upregulated and downregulated genes**.
+📌 **Implementation:** Generated **volcano plots**, analyzed gene expression trends.
+
+### **2.7 Public Health: NHANES Data Analysis**
+📌 **Objective:** Evaluate relationships between **BMI, weight, and age**.
+📌 **Implementation:** Conducted **t-tests**, plotted **weight-height correlations** using **gender, diabetes, and smoking status** as factors.
+
+---
+
+## **Upcoming Tasks**
+📅 More advanced bioinformatics challenges will be added as the internship progresses.
+
+---
+
+## **How to Contribute**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/mkromah/HackBio-BioCoding-Intership.git
+   ```
+2. **Navigate to the project folder:**
+   ```bash
    cd HackBio-BioCoding-Intership
-   ```  
-2. **Navigate to the task folders**  
+   ```
+3. **Work on your assigned task and commit changes:**
    ```bash
-   cd Task_0  # Change directory to Task 0 folder
-   ```  
-3. **Run scripts in R/Python**  
-   ```bash
-   Rscript task0_solution.R  # Run R script
-   python task1_solution.py  # Run Python script
-   ```  
-4. **Check the documentation** in the README files within each task folder.  
+   git add .
+   git commit -m "Completed Task X"
+   git push origin main
+   ```
 
 ---
 
-## 💬 **Connect With Us!**  
-Are you also working on **bioinformatics projects**? Want to collaborate? Let's connect!  
+## **Contact & Socials**
+🔗 **GitHub Repository:** [HackBio BioCoding Internship](https://github.com/mkromah/HackBio-BioCoding-Intership)  
+🔗 **LinkedIn Post:** [Follow our progress](https://www.linkedin.com/posts/mkromah_hackbio-bioinformatics-biocoding-activity-7294767807068569600-D8fu)  
 
-📩 Feel free to reach out for discussions, contributions, or feedback.  
+🙌 **Happy Coding!** 🚀
 
-🚀 **Happy Coding!**  
-
----
-
-### 🔗 **Follow the journey using these hashtags:**  
-`#HackBio #Bioinformatics #Python #R #Genomics #DataScience #Coding #ComputationalBiology`  

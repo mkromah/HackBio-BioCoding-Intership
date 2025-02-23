@@ -1,6 +1,3 @@
-Here's the updated **GitHub README** with Musa listed first and both **Python & R** as his preferred languages:  
-
----
 
 # 🚀 **HackBio Internship – BioCoding Series**  
 Welcome to the **HackBio Internship** repository! 🌍✨  

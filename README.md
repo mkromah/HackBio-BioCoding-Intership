@@ -1,47 +1,126 @@
-# HackBio Internship - Team BioCoders (R Implementation)   
+Here's the updated **GitHub README** with Musa listed first and both **Python & R** as his preferred languages:  
 
-This repository contains solutions for the **HackBio Internship** Task 1, completed by **Team BioCoders** using **R**. The project covers fundamental bioinformatics and computational biology tasks, including **DNA-to-protein translation, bacterial growth modeling, carrying capacity estimation, and Hamming distance calculation**.  
+---
 
-## Task Overview
+# 🚀 **HackBio Internship – BioCoding Series**  
+Welcome to the **HackBio Internship** repository! 🌍✨  
 
-### 1. DNA to Protein Translation 
-Using the **Biostrings** package, we implemented a function to translate a given **DNA sequence** into a **protein sequence** using the standard genetic code.  
-- **Method:**  
-  - The function takes a DNA sequence as input.  
-  - It uses `DNAString()` from Biostrings to process the sequence.  
-  - The `translate()` function converts it into a protein sequence.  
-- **Example Output:**  
-  - Input: `"ATGCCTGAGGAGTAA"`  
-  - Output: `"MPERV*"`  
+This repository documents our **HackBio BioCoding Internship** journey, where we apply programming skills in **bioinformatics and computational biology** to solve real-world problems. Each task in this series builds upon fundamental **coding concepts**, fostering teamwork and problem-solving skills using **Python and R**.  
 
-### **2. Logistic Growth Curve Simulation**  
-We modeled **bacterial growth** using the **logistic growth equation**, plotting different growth curves with **randomized growth rates** and **lag phase durations**.  
-- **Key Features:**  
-  - Simulated bacterial population growth with a **carrying capacity of 200**.  
-  - Created **100 different growth curves** by randomizing growth rates and lag phase midpoints.  
-  - Used R’s `plot()` function to visualize bacterial growth over time.  
+---
 
-### **3. Carrying Capacity Estimation**  
-A function was developed to determine the **carrying capacity** of a bacterial population by calculating the **time required** to reach a given percentage of maximum population size.  
-- **Method:**  
-  - Uses the logistic growth equation to **estimate the time required** for a population to reach 80% of its carrying capacity.  
-- **Validation:**  
-  - Tested at **growth rate = 0.5**, **midpoint = 40** to confirm correctness.  
+## 📌 **Table of Contents**  
+- [📖 Introduction](#-introduction)  
+- [📝 Tasks Overview](#-tasks-overview)  
+  - [✅ Task 0: Data Organization](#✅-task-0-data-organization)  
+  - [✅ Task 1: Data Structures in Bioinformatics](#✅-task-1-data-structures-in-bioinformatics)  
+  - [📅 Upcoming Tasks](#📅-upcoming-tasks)  
+- [👨‍💻 Team Members](#-team-members)  
+- [📚 Resources](#-resources)  
+- [💻 How to Use This Repository](#-how-to-use-this-repository)  
+- [💬 Connect With Us!](#-connect-with-us)  
 
-### **4. Hamming Distance Calculation**  
-We implemented a function to compute the **Hamming distance** between two strings, which measures the number of differing characters.  
-- **Key Features:**  
-  - Compares two strings **character by character**.  
-  - Outputs the **number of positions** where the strings differ.  
-  - Handles cases where strings have different lengths.  
+---
 
-## **How to Run the Code**  
-1. Install necessary dependencies:  
-   ```r
-   install.packages("BiocManager")
-   BiocManager::install("Biostrings")
-   ```
-2. Load the script in R and run the functions to test DNA translation, bacterial growth modeling, carrying capacity estimation, and Hamming distance calculation.  
+## 📖 **Introduction**  
 
-## **Repository Link**  
-🔗 **[HackBio Internship - Team BioCoders (R)](https://github.com/mkromah/HackBio-BioCoding-Intership/blob/main/Task%201)**  
+The **HackBio Internship** is a structured program designed to **equip participants** with hands-on experience in **coding for bioinformatics**. Through multiple stages, we explore **programming fundamentals**, tackle **biological data challenges**, and develop **computational thinking skills**.  
+
+This repository serves as a **documentation hub** for our progress, including scripts, solutions, and explanations for each task.  
+
+---
+
+## 📝 **Tasks Overview**  
+
+### ✅ **Task 0: Data Organization**  
+📌 **Objective:** Organize team information using **basic coding structures** without loops, conditionals, or functions.  
+
+**Topics Covered:**  
+- 🔹 Basic **R & Python syntax**  
+- 🔹 **Data types & structures**  
+- 🔹 **Organizing and displaying structured information**  
+
+📌 **Solution:** We used an **R data frame** to structure and print team details, ensuring clarity and readability.  
+
+📂 **[View Task 0 Solution](https://github.com/mkromah/HackBio-BioCoding-Intership/blob/main/HackBio_Internship_Assigment.ipynb)**  
+
+---
+
+### ✅ **Task 1: Data Structures in Bioinformatics**  
+📌 **Objective:** Implement fundamental **data structures** in Python/R to solve real-world problems in **computational biology**.  
+
+**Topics Covered:**  
+- 🔹 **Lists, Dictionaries, Tuples, and DataFrames**  
+- 🔹 **Translating DNA sequences to proteins** 🧬  
+- 🔹 **Simulating bacterial growth models** 📈  
+- 🔹 **Hamming distance calculation for sequence comparison**  
+
+📌 **Solution:** We utilized **Python and R** to perform **key bioinformatics computations** while demonstrating structured programming practices.  
+
+📂 **[View Task 1 Solution](https://github.com/mkromah/HackBio-BioCoding-Intership/blob/main/HackBio_Internship_Assigment.ipynb)**  
+
+---
+
+### 📅 **Upcoming Tasks**  
+Stay tuned for more tasks as we progress in the internship! 🚀  
+
+🔜 **Task 2: Bioinformatics Algorithms**  
+🔜 **Task 3: Data Visualization in Biology**  
+🔜 **Task 4: Genomic Data Analysis**  
+
+Each new task will be **added to this repository** with explanations and scripts!  
+
+---
+
+## 👨‍💻 **Team Members**  
+
+| Name                 | Country  | Discipline        | Preferred Language(s) |  
+|----------------------|---------|------------------|----------------------|  
+| **Musa Al Hassan Kromah** | 🇱🇷 Liberia | Biotechnology    | Python, R            |  
+| Nina Julian         | 🇰🇪 Kenya | Biotechnology    | R                    |  
+| Fowowe Toyin       | 🇳🇬 Nigeria | Biochemistry     | Python               |  
+
+📌 **LinkedIn Post:** [Check out our LinkedIn submission](https://www.linkedin.com/posts/mkromah_hackbio-bioinformatics-biocoding-activity-7294767807068569600-D8fu?utm_source=share&utm_medium=member_desktop)  
+
+---
+
+## 📚 **Resources**  
+Here are some resources we used during our learning process:  
+
+📌 **Python Basics:** [Python Official Docs](https://docs.python.org/3/tutorial/)  
+📌 **R Basics:** [R for Data Science](https://r4ds.had.co.nz/)  
+📌 **Bioinformatics Algorithms:** [Rosalind Bioinformatics Challenges](http://rosalind.info/)  
+
+---
+
+## 💻 **How to Use This Repository**  
+
+1. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/mkromah/HackBio-BioCoding-Intership.git
+   cd HackBio-BioCoding-Intership
+   ```  
+2. **Navigate to the task folders**  
+   ```bash
+   cd Task_0  # Change directory to Task 0 folder
+   ```  
+3. **Run scripts in R/Python**  
+   ```bash
+   Rscript task0_solution.R  # Run R script
+   python task1_solution.py  # Run Python script
+   ```  
+4. **Check the documentation** in the README files within each task folder.  
+
+---
+
+## 💬 **Connect With Us!**  
+Are you also working on **bioinformatics projects**? Want to collaborate? Let's connect!  
+
+📩 Feel free to reach out for discussions, contributions, or feedback.  
+
+🚀 **Happy Coding!**  
+
+---
+
+### 🔗 **Follow the journey using these hashtags:**  
+`#HackBio #Bioinformatics #Python #R #Genomics #DataScience #Coding #ComputationalBiology`  

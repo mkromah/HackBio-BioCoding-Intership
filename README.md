@@ -1,4 +1,4 @@
-# **HackBio Internship – BioCoding Series**
+# **HackBio Internship – BioCoding**
 
 ## **📌 Table of Contents**
 1. [Introduction](#introduction)
@@ -26,7 +26,6 @@ This repository documents the **HackBio BioCoding Internship**, where we engage 
 | Name                     | Slack Username | Email                      | Hobby               | Country  | Discipline       | Preferred Language |
 |--------------------------|---------------|----------------------------|----------------------|----------|-----------------|--------------------|
 | Musa Al Hassan Kromah    | Musa          | kromahmusa86@gmail.com     | Hiking              | Liberia  | Biotechnology   | Python, R         |
-| Nina Julian              | Julian        | anyangonina39@gmail.com    | Listening to Music  | Kenya    | Biotechnology   | R                 |
 | Fowowe Toyin             | Toyin         | toyintoyo05@gmail.com      | Reading             | Nigeria  | Biochemistry    | Python            |
 
 ---
@@ -52,7 +51,7 @@ data <- data.frame(
 print(data)
 ```
 
-✅ **Outcome:** A structured data representation successfully printed.
+👉 **Outcome:** A structured data representation successfully printed.
 
 ---
 
@@ -72,68 +71,117 @@ import seaborn as sns
 
 # Load dataset
 data = pd.read_csv("microbial_growth.csv")
-
-# Plot growth curves
-sns.lineplot(data=data, x="Time", y="OD600", hue="Strain")
-plt.title("Microbial Growth Curve")
-plt.xlabel("Time (hours)")
-plt.ylabel("OD600")
-plt.show()
 ```
-✅ **Outcome:** Successfully visualized growth differences between strains.
 
 ---
 
 ## **Task 2: Advanced Bioinformatics Analyses**
+### **Objective**
+- Perform computational analyses in various biological disciplines.
+- Apply data science, visualization, and statistical modeling techniques.
 
 ### **2.1 Microbiology: Growth Curve Analysis**
-📌 **Objective:** Compare microbial growth rates between knock-out (-) and knock-in (+) strains.
-📌 **Implementation:** Used **Python (pandas, matplotlib, seaborn)** for data visualization.
+🔹 **Objective:** Analyze microbial growth under different conditions.
+
+🔹 **Approach:** Used Python to process growth curve data, visualize trends, and determine significant differences.
+
+#### **Python Implementation:**
+```python
+# Import necessary libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load growth curve data
+data = pd.read_csv("growth_curve_data.csv")
+
+# Plot microbial growth
+g = sns.lineplot(data=data, x="Time", y="OD600", hue="Condition")
+g.set(title="Microbial Growth Curve", xlabel="Time (hours)", ylabel="Optical Density (OD600)")
+plt.show()
+```
+
+---
 
 ### **2.3 Botany & Plant Science: Metabolic Response Analysis**
-📌 **Objective:** Identify key metabolites in pesticide-resistant crops at different time points.
-📌 **Implementation:** Used **scatter plots, regression models**, and **residual calculations**.
+🔹 **Objective:** Evaluate metabolic shifts in response to environmental changes.
+
+🔹 **Approach:** Used R for data normalization and visualization.
+
+#### **R Implementation:**
+```r
+# Load required library
+library(ggplot2)
+
+# Read dataset
+data <- read.csv("metabolic_data.csv")
+
+# Generate boxplot
+p <- ggplot(data, aes(x=Condition, y=Metabolite_Level, fill=Condition)) +
+     geom_boxplot() +
+     ggtitle("Metabolic Response Analysis")
+print(p)
+```
+
+---
 
 ### **2.4 Biochemistry & Oncology: Protein Mutation Impact**
-📌 **Objective:** Analyze mutations affecting both protein structure and function.
-📌 **Implementation:** Integrated **SIFT & FoldX datasets**, visualized mutation frequencies using **bar plots and pie charts**.
+🔹 **Objective:** Assess functional impact of protein mutations.
+
+🔹 **Approach:** Python-based structural modeling and variant impact prediction.
+
+#### **Python Implementation:**
+```python
+from Bio.PDB import *
+
+# Load PDB file
+parser = PDBParser()
+structure = parser.get_structure("Protein", "protein_structure.pdb")
+
+# Extract chain A
+chain_A = structure[0]["A"]
+
+# Print residue names
+for residue in chain_A:
+    print(residue.resname)
+```
+
+---
 
 ### **2.6 Transcriptomics: RNA-seq Data Analysis**
-📌 **Objective:** Identify **upregulated and downregulated genes**.
-📌 **Implementation:** Generated **volcano plots**, analyzed gene expression trends.
+🔹 **Objective:** Perform differential expression analysis on RNA-seq data.
+
+🔹 **Approach:** Used Python and R to preprocess and analyze RNA-seq datasets.
+
+#### **Python Implementation:**
+```python
+import pandas as pd
+import seaborn as sns
+
+# Load RNA-seq data
+data = pd.read_csv("rna_seq_data.csv")
+
+# Generate heatmap
+sns.heatmap(data.corr(), cmap="coolwarm", annot=True)
+plt.title("Gene Expression Correlation")
+plt.show()
+```
+
+---
 
 ### **2.7 Public Health: NHANES Data Analysis**
-📌 **Objective:** Evaluate relationships between **BMI, weight, and age**.
-📌 **Implementation:** Conducted **t-tests**, plotted **weight-height correlations** using **gender, diabetes, and smoking status** as factors.
+🔹 **Objective:** Investigate health trends using NHANES dataset.
 
----
+🔹 **Approach:** Statistical analysis in Python to uncover population health insights.
 
-## **Upcoming Tasks**
-📅 More advanced bioinformatics challenges will be added as the internship progresses.
+#### **Python Implementation:**
+```python
+import pandas as pd
 
----
+# Load NHANES dataset
+data = pd.read_csv("nhanes_data.csv")
 
-## **How to Contribute**
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/mkromah/HackBio-BioCoding-Intership.git
-   ```
-2. **Navigate to the project folder:**
-   ```bash
-   cd HackBio-BioCoding-Intership
-   ```
-3. **Work on your assigned task and commit changes:**
-   ```bash
-   git add .
-   git commit -m "Completed Task X"
-   git push origin main
-   ```
-
----
-
-## **Contact & Socials**
-🔗 **GitHub Repository:** [HackBio BioCoding Internship](https://github.com/mkromah/HackBio-BioCoding-Intership)  
-🔗 **LinkedIn Post:** [Follow our progress](https://www.linkedin.com/posts/mkromah_hackbio-bioinformatics-biocoding-activity-7294767807068569600-D8fu)  
-
-🙌 **Happy Coding!** 🚀
+# Summary statistics
+print(data.describe())
+```
 

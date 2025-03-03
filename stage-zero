@@ -1,2 +1,79 @@
-## Task Overview  
-This task required our team to organize and store personal information using basic data structures in **Python** (or **R**). We were not allowed to use functions, loops, or conditionals. The goal was to apply fundamental coding concepts such as syntax, data types, and data structures.  
+# **HackBio Internship – Stage 0: Team Formation & Data Representation**
+
+## **📌 Table of Contents**
+1. [Introduction](#introduction)
+2. [Team Information](#team-information)
+3. [Task Objective](#task-objective)
+4. [Implementation Approach](#implementation-approach)
+5. [Code Implementation](#code-implementation)
+6. [Outcome](#outcome)
+7. [Contributors](#contributors)
+8. [Contact & Socials](#contact--socials)
+
+---
+
+## **Introduction**
+Welcome to **Stage 0** of the **HackBio BioCoding Internship**! This stage focuses on setting up our team and structuring information in a data-friendly format. As bioinformatics enthusiasts, we organize data using **Python and R**, preparing for more advanced tasks ahead.
+
+---
+
+## **Team Information**
+| Name                     | Slack Username | Email                      | Hobby               | Country  | Discipline       | Preferred Language |
+|--------------------------|---------------|----------------------------|----------------------|----------|-----------------|--------------------|
+| Musa Al Hassan Kromah    | Musa          | kromahmusa86@gmail.com     | Hiking              | Liberia  | Biotechnology   | Python, R         |
+| Nina Julian              | Julian        | anyangonina39@gmail.com    | Listening to Music  | Kenya    | Biotechnology   | R                 |
+| Fowowe Toyin             | Toyin         | toyintoyo05@gmail.com      | Reading             | Nigeria  | Biochemistry    | Python            |
+
+---
+
+## **Task Objective**
+- Format team data in a structured **data frame/table**.
+- Use **Python or R** without **loops, conditionals, or functions**.
+- Ensure readability and ease of data retrieval.
+
+---
+
+## **Implementation Approach**
+We utilize **data frames**, a fundamental concept in data science, to organize team information efficiently.
+
+---
+
+## **Code Implementation**
+### **Python Implementation (Pandas DataFrame)**
+```python
+import pandas as pd
+
+# Create structured data
+team_data = pd.DataFrame({
+    "Name": ["Musa Al Hassan Kromah", "Nina Julian", "Fowowe Toyin"],
+    "Slack_Username": ["Musa", "Julian", "Toyin"],
+    "Email": ["kromahmusa86@gmail.com", "anyangonina39@gmail.com", "toyintoyo05@gmail.com"],
+    "Hobby": ["Hiking", "Listening to Music", "Reading"],
+    "Country": ["Liberia", "Kenya", "Nigeria"],
+    "Discipline": ["Biotechnology", "Biotechnology", "Biochemistry"],
+    "Preferred_Language": ["Python, R", "R", "Python"]
+})
+
+# Print formatted data
+print(team_data)
+
+## R Implementation (Data Frame)
+# Load necessary library
+data <- data.frame(
+  Name = c("Musa Al Hassan Kromah", "Nina Julian", "Fowowe Toyin"),
+  Slack_Username = c("Musa", "Julian", "Toyin"),
+  Email = c("kromahmusa86@gmail.com", "anyangonina39@gmail.com", "toyintoyo05@gmail.com"),
+  Hobby = c("Hiking", "Listening to Music", "Reading"),
+  Country = c("Liberia", "Kenya", "Nigeria"),
+  Discipline = c("Biotechnology", "Biotechnology", "Biochemistry"),
+  Preferred_Language = c("Python, R", "R", "Python")
+)
+
+# Print the data
+print(data)
+
+## Outcome
+A structured representation of team information, ensuring clarity and accessibility.
+
+
+

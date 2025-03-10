@@ -1,0 +1,83 @@
+# HackBio Internship
+#Task 1 Team BioCoders
+# Github link https://github.com/mkromah/HackBio-BioCoding-Intership/blob/main/Task%201
+
+#install packages
+install.packages("BiocManager")
+library(BiocManager)#loads the BiocManager package
+BiocManager::install("Biostrings")#installs the Biostring package
+library(Biostrings)#loads the Biostrings package
+#Translate dna to protein
+translate_dna_to_protein <- function(dna_sequence_string){
+  dna_sequence <- DNAString(dna_sequence_string)
+  protein <- translate(dna_sequence, if.fuzzy.codon = "solve")
+  return(protein)
+}
+#calling the translate_dna_to_protein function
+protein_sequence <- translate_dna_to_protein("ATGCCTGAGGAGTAA")
+print(protein_sequence)
+
+#task2
+# logistic growth curve
+logistic_growth_curve <- function(growth_rate, midpoint, time_taken=1:160, max_population= 200){
+  #equation
+  y <- max_population/(1 + exp((-growth_rate*(time_taken - midpoint))))
+  return(y)
+}
+bacterial_growth_rate <- logistic_growth_curve(0.1, 100)
+plot(x = 1:160, y = bacterial_growth_rate)
+#Randomize the lenght of the   exponential phase(growth rate)
+random_growth_rate <- sample(seq(from = 0, to = 10, by = 0.01), size = 200, replace = TRUE)
+#Randomize the legnth of the lag phase (midpoints)
+random_midpoints <- sample(seq(from = 20, to = 100, by = 0.2), size = 200, replace=TRUE)
+#data frame with100 different growth curves
+curves <- 1:100
+growth_curve <- list()
+
+
+for (index in curves){
+  new <- logistic_growth_curve(random_growth_rate[index], random_midpoints[index])
+growth_curve[[index]] <- new
+}
+#convert to data frame
+growth_curve <- as.data.frame(growth_curve)
+colnames(growth_curve) <- paste0("curve_", curves)
+tail(growth_curve)
+
+
+#task3
+#function to determine carrying capacity
+capacity <- function(growth_rate, midpoint, carrying_capacity =80, max_population = 200){
+  time <- midpoint - (log(((max_population/carrying_capacity) -1))/growth_rate)
+  return(time)
+}
+#To cornfirm carrying capacity
+test <- capacity(0.5, 40)
+print(test)
+#To check if carrying capacity is at 80%
+check <- logistic_growth_curve(0.5, 40, time = 39.18907)
+print(check)
+
+#task 4
+#Hamming distance(distance between two words)
+hamming_distance <- function(string_a, string_b){
+  #check if the number of characters are same in both strings
+string_a <- strsplit(string_a, split = "")[[1]]#Extract the string from the list
+  string_b <- strsplit(string_b, split = "")[[1]]#Extract the string from the list
+
+hamming_distance <- 0
+#recapitulate through the length of the shorter string
+for(i in 1:min(length(string_a), length(string_b))){
+if(string_a[i] != string_b[i]){
+   hamming_distance <- hamming_distance + 1
+}
+
+}
+if(length(string_a) !=length(string_b)){
+   paste("number of character in string a different from string b")
+  }
+return(hamming_distance)
+}
+#testing the function
+tested <- hamming_distance("Julian", "Nina06")
+  print(tested)

@@ -1,0 +1,14 @@
+#Team BioCoders Task_Zero Assignment
+#Our GitHub Repository: https://github.com/mkromah/HackBio-BioCoding-Intership/blob/main/HackBio_Internship_Assigment.ipynb
+#Linkedln Post: https://www.linkedin.com/posts/mkromah_hackbio-bioinformatics-biocoding-activity-7294767807068569600-D8fu?utm_source=share&utm_medium=member_desktop
+
+BioCoders_data <- data.frame(
+  Names = c("Nina Julian","Fowowe Toyin", "Musa Al Hassan Kromah"),
+  Slack_username = c ("Julian", "Toyin", "Musa"),
+  Email = c("anyangonina39@gmail.com", "toyintoyo05@gmail.com", "kromahmusa86@gmail.com"),
+  Hobby = c("listening to music", "reading", "hiking"),
+  Country = c("Kenya","Nigeria", "Liberia"),
+  Discipline = c("Biotechnology", "Biochemistry", "Biotechnology"),
+  Programming_language = c("R", "python", "python")
+)
+print(BioCoders_data)

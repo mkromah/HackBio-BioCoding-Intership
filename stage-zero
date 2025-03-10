@@ -1,79 +1,101 @@
-# **HackBio Internship – Stage 0: Team Formation & Data Representation**
+### 🏆 HackBio Internship 2025 – Stage 0: Team BioCoders  
 
-## **📌 Table of Contents**
-1. [Introduction](#introduction)
-2. [Team Information](#team-information)
-3. [Task Objective](#task-objective)
-4. [Implementation Approach](#implementation-approach)
-5. [Code Implementation](#code-implementation)
-6. [Outcome](#outcome)
-7. [Contributors](#contributors)
-8. [Contact & Socials](#contact--socials)
+#### 🔹 **Task Overview**  
+This task focused on fundamental coding syntax, data types, and data structures. The goal was to organize and display information about team members in a structured format without using functions, loops, or conditionals.  
 
----
-
-## **Introduction**
-Welcome to **Stage 0** of the **HackBio BioCoding Internship**! This stage focuses on setting up our team and structuring information in a data-friendly format. As bioinformatics enthusiasts, we organize data using **Python and R**, preparing for more advanced tasks ahead.
-
----
-
-## **Team Information**
-| Name                     | Slack Username | Email                      | Hobby               | Country  | Discipline       | Preferred Language |
-|--------------------------|---------------|----------------------------|----------------------|----------|-----------------|--------------------|
-| Musa Al Hassan Kromah    | Musa          | kromahmusa86@gmail.com     | Hiking              | Liberia  | Biotechnology   | Python, R         |
-| Nina Julian              | Julian        | anyangonina39@gmail.com    | Listening to Music  | Kenya    | Biotechnology   | R                 |
-| Fowowe Toyin             | Toyin         | toyintoyo05@gmail.com      | Reading             | Nigeria  | Biochemistry    | Python            |
+#### 📌 **Task Requirements:**  
+- Form a team of at least **five members**, each familiar with different programming languages.  
+- Choose **either R or Python** to complete the task (we used **R**).  
+- Organize and display the following details:  
+  - Name  
+  - Slack Username  
+  - Email  
+  - Hobby  
+  - Country  
+  - Discipline  
+  - Preferred Programming Language  
+- Ensure that the final output is printed in a **clear and logical** manner.  
+- Record a short **video tutorial** explaining our approach and post it on **LinkedIn**.  
 
 ---
 
-## **Task Objective**
-- Format team data in a structured **data frame/table**.
-- Use **Python or R** without **loops, conditionals, or functions**.
-- Ensure readability and ease of data retrieval.
+## 🖥️ **Our Approach**  
 
----
+### 🚀 **Step 1: Selecting a Programming Language**  
+After discussion, our team chose **R** for this task due to its robust data handling capabilities.  
 
-## **Implementation Approach**
-We utilize **data frames**, a fundamental concept in data science, to organize team information efficiently.
+### 📝 **Step 2: Creating a Data Structure**  
+We used an **R data frame**, which allows us to store structured data in tabular form.  
 
----
+### 🛠 **Step 3: Implementing the Code**  
+Here’s the **R script** used to store and display our team’s information:  
 
-## **Code Implementation**
-### **Python Implementation (Pandas DataFrame)**
-```python
-import pandas as pd
+```r
+# Team BioCoders Task_Zero Assignment
+# GitHub Repository: https://github.com/mkromah/HackBio-BioCoding-Intership/blob/main/HackBio_Internship_Assigment.ipynb
+# LinkedIn Post: https://www.linkedin.com/posts/mkromah_hackbio-bioinformatics-biocoding-activity-7294767807068569600-D8fu?utm_source=share&utm_medium=member_desktop
 
-# Create structured data
-team_data = pd.DataFrame({
-    "Name": ["Musa Al Hassan Kromah", "Nina Julian", "Fowowe Toyin"],
-    "Slack_Username": ["Musa", "Julian", "Toyin"],
-    "Email": ["kromahmusa86@gmail.com", "anyangonina39@gmail.com", "toyintoyo05@gmail.com"],
-    "Hobby": ["Hiking", "Listening to Music", "Reading"],
-    "Country": ["Liberia", "Kenya", "Nigeria"],
-    "Discipline": ["Biotechnology", "Biotechnology", "Biochemistry"],
-    "Preferred_Language": ["Python, R", "R", "Python"]
-})
-
-# Print formatted data
-print(team_data)
-
-## R Implementation (Data Frame)
-# Load necessary library
-data <- data.frame(
-  Name = c("Musa Al Hassan Kromah", "Nina Julian", "Fowowe Toyin"),
-  Slack_Username = c("Musa", "Julian", "Toyin"),
-  Email = c("kromahmusa86@gmail.com", "anyangonina39@gmail.com", "toyintoyo05@gmail.com"),
-  Hobby = c("Hiking", "Listening to Music", "Reading"),
-  Country = c("Liberia", "Kenya", "Nigeria"),
-  Discipline = c("Biotechnology", "Biotechnology", "Biochemistry"),
-  Preferred_Language = c("Python, R", "R", "Python")
+# Creating a data frame to store team information
+BioCoders_data <- data.frame(
+  Names = c("Nina Julian", "Fowowe Toyin", "Musa Al Hassan Kromah"),
+  Slack_username = c("Julian", "Toyin", "Musa"),
+  Email = c("anyangonina39@gmail.com", "toyintoyo05@gmail.com", "kromahmusa86@gmail.com"),
+  Hobby = c("Listening to music", "Reading", "Hiking"),
+  Country = c("Kenya", "Nigeria", "Liberia"),
+  Discipline = c("Biotechnology", "Biochemistry", "Biotechnology"),
+  Programming_language = c("R", "Python", "Python")
 )
 
-# Print the data
-print(data)
+# Printing the organized data
+print(BioCoders_data)
+```
 
-## Outcome
-A structured representation of team information, ensuring clarity and accessibility.
+---
 
+## 📊 **Code Explanation**  
+### 🔹 **1. Creating a Data Frame**  
+- We used `data.frame()` in **R** to store our team’s details.  
+- Each column represents a specific attribute: **Name, Slack Username, Email, Hobby, Country, Discipline, and Programming Language**.  
 
+### 🔹 **2. Populating the Data Frame**  
+- We assigned relevant values to each column using **vectors**.  
+- For example, `Names` contains a vector with each team member’s name.  
 
+### 🔹 **3. Displaying the Output**  
+- The final `print()` statement ensures the information is neatly presented as a table.  
+
+---
+
+## ✅ **Final Output**  
+
+When executed, the script outputs the following structured table:  
+
+| Names                | Slack Username | Email                          | Hobby               | Country | Discipline    | Programming Language |
+|----------------------|---------------|--------------------------------|---------------------|---------|--------------|---------------------|
+| Nina Julian         | Julian        | anyangonina39@gmail.com        | Listening to music | Kenya   | Biotechnology | R                   |
+| Fowowe Toyin        | Toyin         | toyintoyo05@gmail.com         | Reading            | Nigeria | Biochemistry | Python              |
+| Musa Al Hassan Kromah | Musa         | kromahmusa86@gmail.com        | Hiking             | Liberia | Biotechnology | Python              |
+
+---
+
+## 🎥 **Video Submission**  
+Our team created a **short video tutorial** explaining our approach. You can find it on **LinkedIn**:  
+🔗 [LinkedIn Post](https://www.linkedin.com/posts/mkromah_hackbio-bioinformatics-biocoding-activity-7294767807068569600-D8fu?utm_source=share&utm_medium=member_desktop)  
+
+---
+
+## 📌 **Key Learnings from This Stage**  
+- Understanding **basic R syntax** and how to create **data frames**.  
+- Learning how to store and structure **data efficiently**.  
+- Practicing **collaboration** in a team setting.  
+- Preparing a **professional video presentation** of our solution.  
+
+---
+
+## 📂 **Project Repository**  
+🔗 [GitHub Repo](https://github.com/mkromah/HackBio-BioCoding-Intership/blob/main/HackBio_Internship_Assigment.ipynb)  
+
+---
+
+## 🔥 **Next Steps: Moving to Stage 1**  
+With Stage 0 completed, we are now preparing for **Stage 1**, which will focus on **more advanced coding concepts**. Stay tuned! 🚀
